@@ -1,0 +1,111 @@
+h1 {
+    background:linear-gradient(#141e30, #243b55);
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+  h3{
+    text-align: center;
+    color: white;
+  }
+  .a{
+    border-radius: 15px;
+    border-color: white;
+    background: rgba(0,0,0,.5);
+    padding: 20px;
+    width:600px;
+    height:350px;
+    margin-left:30%;
+    border-style: solid;
+    color:#fff;
+    
+  }
+  input[type=number] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background: linear-gradient(white, grey);
+
+  }
+  
+  input[type="reset"] {
+    padding: 10px;
+    background-color:#243b55;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    cursor: pointer;
+
+  }
+  button
+{
+    position: relative;
+    color:#243b55;
+    letter-spacing: 15px;
+    border: 5px solid #243b55;
+    padding: 50px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 1.5s;
+    border-radius:100px;
+}
+.button:hover
+{
+    box-shadow: 0 5px 50px 0 #243b55 inset,0 5px 50px 0 #243b55,
+    0 5px 50px 0 #243b55 inset,0 5px 50px 0 #243b55;
+    text-shadow: 0 0 5px #243b55;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #243b55, 0 0 40px #243b55, 0 0 50px #243b55, 0 0 60px #243b55, 0 0 70px #243b55;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #141e30, 0 0 40px #141e30, 0 0 50px#141e30, 0 0 60px #141e30, 0 0 70px #141e30, 0 0 80px #141e30;
+  }
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+@media (max-width: 768px) {
+  /* Adjust the width and center the container for smaller screens */
+  .a {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust the width and center the container for mobile devices */
+  .a {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
